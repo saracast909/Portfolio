@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap');
+
+body {
+    background: #F8F8FF;
+    margin: 0;
+    padding: 0;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    height: 7rem;
+}
+.pages{
+    display: flex;
+    gap: 65px;
+}
+a{
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #0A0A0A;
+    font-weight: 500;
+}
+.contact, .b-save {
+    background: #191970;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 12px 33px;
+    border-radius: 18px;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 17vh 83vh;
+}
+.presentation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-around;
+    margin-left: 10rem;
+}
+h1{
+    font-family: 'Jost', sans-serif;
+    font-size: 35px;
+    margin: 0;
+}
+p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 17px;
+}
+.pres-me{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.social{
+    display: flex;
+    gap: 15px;
+}
+#about-me{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 74vh 26vh;
+}
+.sb{
+    background: #0A0A0A;
+    padding: 18px;
+    border-radius: 50px;
+}
+.ski-edu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+h2{
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    grid-column: 1;
+}
+.info-edu{
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(10, 10, 10, 60%);
+    margin: 0;
+    grid-column: 1;
+}
+hr{
+    width: 25rem;
+    grid-column: 1;
+}
+.b-cer{
+    background-color: #191970;
+    width: 50px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+.education{
+    display: grid;
+    grid-template-columns: 22rem 3rem;
+}
+.skills {
+    display: grid;
+    grid-template-rows: 55px repeat(2, 1fr);
+    margin-left: 10rem;
+}
+.image { 
+    width: 45px; height: 42px; 
+}
+.logo {
+    display: flex;
+    gap: 15rem;
+}
+.description{
+    display: flex;
+    gap:  221px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#projects{
+    display: grid;
+    grid-template-rows: 20vh;
+    align-items: center;
+    margin: 6rem 10rem;
+    align-content: center;
+}
+.tarjeta { 
+    display: grid; 
+    background: #F5F5F5; 
+    grid-template-columns: repeat(5, 1fr); 
+    align-content: space-between; 
+    padding: 2rem; 
+    border-radius: 20px; 
+}
+.fondo{
+    background: #E3E3E3;
+    padding: 35px 5px;
+    border-radius: 20px;
+}
+.info-project{
+    grid-column: 2/6;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.clas{
+    font-family: 'Jost', sans-serif;
+    color: #7B68EE;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+}
+.des-project{
+    color: rgba(10, 10, 10, 60%);
+    font-size: 15px;
+}
+.b-view{
+    background: #191970;
+    padding: 10px 30px;
+    font-family: 'Jost', sans-serif;
+    color: #F5F5F5;
+    font-weight: bold;
+    border-radius: 15px;
+}
+footer{
+    background: #191970;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
