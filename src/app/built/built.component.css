@@ -1,0 +1,36 @@
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+.icons a{
+    font-size: 20px;
+    color: #818184;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    img{
+        width: 100%;
+    }
+    section{
+        flex-direction: column-reverse;
+    }
+    section > div{
+        text-align: center;
+    }
+    .icons{
+        justify-content: center;
+    }
+}
