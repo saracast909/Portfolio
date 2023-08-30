@@ -1,16 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
+:root{
+    --font-title: 'Jost', sans-serif;
+    --font-text: 'Comfortaa', cursive;
+    --primary-color: #191970;
+    --secondary-color: #7B68EE;
+    --white: #F8F8FF;
+    --gray: #F5F5F5;
+    --black: #0A0A0A;
+}
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    background-color: #F8F8FF;
+    background-color: var(--white);
+    font-family: var(--font-text);
 }
-h1{
-    font-family: 'Jost', sans-serif;
-}
-p{
-    font-family: 'Comfortaa', cursive;
+.button{
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-family: var(--font-title);
+    font-weight: 600;
 }

@@ -1,0 +1,12 @@
+<nav class="navbar">
+    <a href=""><img src="./assets/Logo.svg" alt="Logo" class="logo"></a>
+    <i class="fi menu-burger" [ngClass]="open ? 'fi-br-cross' : 'fi-br-menu-burger'" (click)="open = !open"></i>
+    <div [ngClass]="{ 'menu-hidden': open }">   
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#project">Projects</a></li>
+        </ul>
+        <a href="mailto:saracm181105@gmail.com" class="button">Contact</a>
+    </div>
+</nav>
