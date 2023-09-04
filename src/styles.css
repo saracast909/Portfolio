@@ -7,7 +7,7 @@
     --primary-color: #191970;
     --secondary-color: #7B68EE;
     --white: #F8F8FF;
-    --gray: #F5F5F5;
+    --gray: #ECECF4;
     --black: #0A0A0A;
 }
 *{
@@ -20,11 +20,24 @@ body{
     font-family: var(--font-text);
 }
 .button{
-    background-color: var(--primary-color);
-    color: white;
     text-decoration: none;
     padding: 10px 25px;
     border-radius: 10px;
     font-family: var(--font-title);
     font-weight: 600;
+}
+.primary-button{
+    background-color: var(--primary-color);
+    color: white;
+}
+.secondary-button{
+    border: var(--primary-color) 2px solid;
+    color: var(--primary-color);
+}
+.technologies-chips{
+    background-color: var(--secondary-color);
+    padding: 5px 10px;
+    color: var(--white);
+    border-radius: 50px;
+    font-size: 14px;
 }

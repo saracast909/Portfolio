@@ -1,6 +1,6 @@
 <main>
     <app-navbar></app-navbar>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-description">
             <h1>
                 Hi, stranger 👋🏻.
@@ -8,7 +8,7 @@
                 I'm <span>Sara Castillo 🙋🏻‍♀️.</span> 
             </h1>
             <p>I am a frontend developer who loves design, color, and technology. I aim to blend aesthetics and functionality in every project.</p>
-            <a href="./assets/cv-sara-castillo.pdf" class="button" target="_blank">View CV</a>
+            <a href="./assets/cv-sara-castillo.pdf" class="button primary-button" target="_blank">View CV</a>
         </div>
         <div class="home-image">
             <img src="./assets/main-image.png" alt="">
@@ -21,3 +21,89 @@
         </div>
     </section>
 </main>
+<section id="about" class="about">
+    <div class="main-about">
+        <h2>Skills & Experience</h2>
+        <p class="phrase"><span>— </span>✨ As a frontend developer, my passion is to use technology and creativity 😊 to build functional and attractive websites 👩🏻‍💻</p>
+    </div>
+    <div class="container-skills">
+        <h3>Skills</h3>
+        <div class="skills">
+            <div>
+                <img src="./assets/html.svg" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div>
+                <img src="./assets/css.svg" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div>
+                <img src="./assets/angular.svg" alt="Angular">
+                <p>Angular</p>
+            </div>
+            <div>
+                <img src="./assets/typescript.svg" alt="TypeScript">
+                <p>TypeScript</p>
+            </div>
+            <div>
+                <img src="./assets/figma.svg" alt="Figma">
+                <p>Figma</p>
+            </div>
+            <div>
+                <img src="./assets/git.svg" alt="Git">
+                <p>Git</p>
+            </div>
+        </div>
+    </div>
+    <div class="experiences">
+        <h3>Experience</h3>
+        <div class="container-experience">
+            <i class="fi fi-br-briefcase"></i>
+            <div>
+                <h4>Web UI Developer</h4>
+                <p>2023 - Present</p>
+                <p>Globant</p>
+            </div>
+        </div>
+        <div class="container-experience">
+            <i class="fi fi-br-graduation-cap"></i>
+            <div>
+                <h4>Technologist - Analysis and Software Development</h4>
+                <p>2022 - Present</p>
+                <p>Servicio Nacional de Aprendizaje (SENA)</p>
+            </div>
+        </div>
+        <div class="container-experience">
+            <i class="fi fi-br-graduation-cap"></i>
+            <div>
+                <h4>Technical - Software Programming</h4>
+                <p>2020 - 2021</p>
+                <p>Servicio Nacional de Aprendizaje (SENA)</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <p class="phrase"><span>— </span>If you can imagine it, you can create it. 🔮</p>
+    <div class="container-cards">
+        <div *ngFor="let project of allProjects, index as i" class="card-project">
+            <img [src]="project.images[0]" [alt]="project.name" width="200px">
+            <div class="project-info">
+                <div class="project-technologies">
+                    <div *ngFor="let technology of project.technologies" class="technologies-chips">
+                        <p>{{ technology }}</p>
+                    </div>
+                </div>
+                <p class="project-category">{{ project.category }}</p>
+                <h4 class="project-title">{{ project.name }}</h4>
+                
+                <p class="project-description">{{ project.description }}</p>
+                <div class="action-buttons">
+                    <a [href]="project.linkWeb" class="button secondary-button" target="_blank">Link</a>
+                    <a [routerLink]="['project', i]" class="button primary-button">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

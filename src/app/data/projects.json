@@ -1,0 +1,32 @@
+{
+    "portfolio": [
+        {
+            "name": "Ecommerce Imperio Marroquinero",
+            "category": "Website",
+            "description": "An online platform for purchasing high-quality leather and leather goods.",
+            "technologies": ["Angular", "CSS", "HTML", "TypeScript", "Figma"],
+            "images": [
+                "./assets/projects/ecommerce/principal-image.png", 
+                "./assets/projects/ecommerce/login-image.png",
+                "./assets/projects/ecommerce/product-image.png",
+                "./assets/projects/ecommerce/cart-image.png"
+            ],
+            "linkWeb": "https://imperio-marroquinero.vercel.app",
+            "linkFigma": "https://www.figma.com/file/vfUAXIOGcENTsWQMzjUkGr/Imperio-Marroquinero?type=design&node-id=0%3A1&mode=design&t=tWN0rtNWEhujzGxB-1",
+            "linkGit": "https://github.com/saracast909/imperio-marroquinero.git"
+        },
+        {
+            "name": "Arca",
+            "category": "UX/UI Design",
+            "description": "A medical appointment management system that allows you to manage and track medical appointments.",
+            "technologies": ["Figma"],
+            "images": [
+                "./assets/projects/arca/principal-image.png", 
+                "./assets/projects/arca/login-image.png",
+                "./assets/projects/arca/dashboard-image.png",
+                "./assets/projects/arca/users-image.png"
+            ],
+            "linkFigma": "https://imperio-marroquinero.vercel.app"
+        }
+    ]
+}

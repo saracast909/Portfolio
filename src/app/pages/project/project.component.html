@@ -1,0 +1,23 @@
+<section>
+    <app-navbar></app-navbar>
+    <div class="project-container">
+        <div class="project-images">
+            <img *ngFor="let image of project.images" [src]="image" [alt]="project.name">
+        </div>
+        <div class="project-info">
+            <p class="project-category">{{project.category}}</p>
+            <h2>{{project.name}}</h2>
+            <div class="project-technologies">
+                <div *ngFor="let technology of project.technologies" class="technologies-chips">
+                    <p>{{ technology }}</p>
+                </div>
+            </div>
+            <p>{{project.description}}</p>
+            <div class="container-links">
+                <a [href]="project.linkGit" target="_blank" *ngIf="project.linkGit" class="link-button primary-button"><i class="fi fi-brands-github"></i></a>
+                <a [href]="project.linkFigma" target="_blank" *ngIf="project.linkFigma" class="link-button primary-button"><i class="fi fi-brands-figma"></i></a>
+                <a [href]="project.linkWeb" target="_blank" *ngIf="project.linkWeb" class="link-button primary-button"><i class="fi fi-br-globe"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
