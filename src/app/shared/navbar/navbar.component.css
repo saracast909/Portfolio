@@ -40,6 +40,7 @@
 @media screen and (max-width: 650px){
     .navbar{
         display: flex;
+        padding: 15px 8%;
     }
     .navbar div{
         display: none;

@@ -15,9 +15,9 @@
         </div>
         <div class="brands">
             <p>Check Out My</p>
-            <a href="https://www.linkedin.com/in/saracast909/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
-            <a href="https://github.com/saracast909" target="_blank"><i class="fi fi-brands-github"></i></a>
-            <a href="https://www.figma.com/@saracast909" target="_blank"><i class="fi fi-brands-figma"></i></a>
+            <a href="https://www.linkedin.com/in/saracast909/" target="_blank"><img src="./assets/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/saracast909" target="_blank"><img src="./assets/github.svg" alt="LinkedIn"></a>
+            <a href="https://www.figma.com/@saracast909" target="_blank"><img src="./assets/figma.svg" alt="Figma"></a>
         </div>
     </section>
 </main>
@@ -100,7 +100,7 @@
                 
                 <p class="project-description">{{ project.description }}</p>
                 <div class="action-buttons">
-                    <a [href]="project.linkWeb" class="button secondary-button" target="_blank">Link</a>
+                    <a [href]="project.linkPrincipal" class="button secondary-button" target="_blank">Link</a>
                     <a [routerLink]="['project', i]" class="button primary-button">View</a>
                 </div>
             </div>

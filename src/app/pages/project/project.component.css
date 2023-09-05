@@ -56,6 +56,10 @@ i[class*=" fi-br-"]:before{
     line-height: 2;
 }
 @media screen and (max-width: 650px){
+    section{
+        height: auto;
+        padding-bottom: 20px;   
+    }
     .project-container{
         grid-template-columns: 1fr;
         gap: 30px;
